@@ -1,11 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kilangi Jewelry</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kilangi Jewellery Store</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="responsive-styles.css" />
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="container top-bar-inner">
+                <p class="announcement">
+                    Step into Sparkle – Pure Gold & Silver Await
+                </p>
+                <div class="social-icons desktop-only">
+                    <svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        fill="none"
+                    >
+                        <rect
+                            x="2"
+                            y="2"
+                            width="20"
+                            height="20"
+                            rx="5"
+                            ry="5"
+                        ></rect>
+                        <path
+                            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                        ></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        fill="none"
+                    >
+                        <path
+                            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <header class="main-header">
+            <div class="container header-inner">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for Earrings.." />
+                    <button class="search-btn">
+                        <svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="logo">
+                    <svg width="140" height="40" viewBox="0 0 140 40">
+                        <text
+                            x="50%"
+                            y="50%"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                            font-family="serif"
+                            font-size="24"
+                            fill="#1A3C34"
+                            letter-spacing="2"
+                        >
+                            KILANGI
+                        </text>
+                    </svg>
+                </div>
+
+                <div class="user-actions">
+                    <a href="#" class="action-icon">
+                        <svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                        >
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="action-icon desktop-only">
+                        <svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                        >
+                            <path
+                                d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                            ></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="action-icon">
+                        <svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                        >
+                            <path
+                                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                            ></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="mobile-controls">
+            <div class="mobile-search-wrapper">
+                <div class="search-bar mobile-search-input">
+                    <input type="text" placeholder="Search for Earrings.." />
+                    <button class="search-btn">
+                        <svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mobile-categories">
+                <div class="category-pill">
+                    <img src="images/bestsellers.jpg" class="cat-img" />
+                    <span>Bestsellers</span>
+                </div>
+                <div class="category-pill">
+                    <img src="images/earrings.jpg" class="cat-img" />
+                    <span>Earrings</span>
+                </div>
+                <div class="category-pill">
+                    <img src="images/rings.jpg" class="cat-img" />
+                    <span>Rings</span>
+                </div>
+                <div class="category-pill">
+                    <img src="images/necklace.jpg" class="cat-img" />
+                    <span>Necklace</span>
+                </div>
+                <div class="category-pill">
+                    <img src="images/pendant.jpg" class="cat-img" />
+                    <span>Pendants</span>
+                </div>
+                <div class="category-pill">
+                    <img src="images/bangles.jpg" class="cat-img" />
+                    <span>Bangles</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="desktop-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="#">All Jewellery</a></li>
+                    <li><a href="#">Gold</a></li>
+                    <li><a href="#">Silver</a></li>
+                    <li><a href="#">Gifting</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text-wrapper">
+                    <h1 class="hero-title">
+                        Because You Deserve to Feel <em>Timeless.</em>
+                    </h1>
+                    <p class="hero-desc">
+                        Each piece is thoughtfully designed to celebrate your
+                        individuality — blending modern elegance with lasting
+                        craftsmanship.
+                    </p>
+                    <a href="#" class="btn-primary">
+                        Explore the Elegance
+                        <svg
+                            class="arrow-icon"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                        >
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image desktop-only">
+                <img
+                    src="images/eric-fung-Z0GZrpwcc5Y-unsplash.jpg"
+                    class="img-placeholder"
+                />
+            </div>
+        </section>
+
+        <section class="features-bar">
+            <div class="container features-inner">
+                <div class="feature-item">
+                    <span class="feature-text">Anti - Fade Polish</span>
+                </div>
+                <div class="feature-divider">
+                    <svg
+                        class="star-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                    >
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                    </svg>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-text">Timeless Design</span>
+                </div>
+                <div class="feature-divider x">
+                    <svg
+                        class="star-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                    >
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                    </svg>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-text">Lightweight Comfort</span>
+                </div>
+                <div class="feature-divider">
+                    <svg
+                        class="star-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                    >
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                    </svg>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-text">Modern Minimal</span>
+                </div>
+            </div>
+        </section>
+
+        <script src="scripts.js"></script>
+    </body>
 </html>

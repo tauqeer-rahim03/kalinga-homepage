@@ -1,0 +1,130 @@
+/* ==================== DESKTOP STYLES (min-width: 1024px) ==================== */
+@media (min-width: 1024px) {
+    /* Utilities */
+    .desktop-only {
+        display: flex !important;
+    }
+
+    /* Top Bar */
+    .top-bar-inner {
+        justify-content: space-between;
+    }
+
+    .social-icons {
+        gap: 12px;
+    }
+
+    /* Header */
+    .header-inner {
+        height: 70px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr; /* Left (Search), Center (Logo), Right (Actions) */
+        align-items: center;
+    }
+
+    .header-inner .search-bar {
+        display: flex;
+        max-width: 300px;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .user-actions {
+        justify-content: flex-end;
+    }
+
+    .mobile-controls {
+        display: none;
+    }
+
+    /* Navigation */
+    .desktop-nav {
+        display: flex;
+        background-color: var(--color-beige);
+        padding: 14px 0;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: #4a4a4a;
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        transition: color 0.2s;
+    }
+
+    .nav-list a:hover {
+        color: var(--color-teal-dark);
+    }
+
+    .hero-section {
+        height: 600px;
+        display: flex;
+        align-items: stretch;
+        background: none;
+    }
+
+    .hero-content {
+        width: 50%;
+        background-color: var(--color-teal-dark);
+        background-image: url(images/jasmin-chew-WKD2vIe8Rb0-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 60px 60px;
+        position: relative;
+    }
+
+    .hero-text-wrapper {
+        max-width: 450px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .hero-image {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hero-image .img-placeholder {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Features Bar */
+    .features-inner {
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: nowrap;
+    }
+
+    .feature-divider {
+        display: flex;
+        align-items: center;
+    }
+
+    .feature-item {
+        font-size: 16px;
+    }
+}
