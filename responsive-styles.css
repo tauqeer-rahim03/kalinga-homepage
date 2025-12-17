@@ -248,4 +248,9 @@
     .promo-title {
         font-size: 36px;
     }
+
+    /* Hide this section completely on Desktop */
+    .section-social-mobile {
+        display: none;
+    }
 }

@@ -814,3 +814,72 @@ body {
     height: 16px;
     stroke: var(--color-teal-dark);
 }
+
+/* ==================== SOCIAL SECTION (MOBILE ONLY) ==================== */
+.section-social-mobile {
+    padding: 20px 0 40px 0;
+    background-color: var(--color-white);
+    display: block;
+}
+
+.social-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-text-dark);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.social-text strong {
+    font-weight: 700;
+}
+
+/* Button Layout */
+.social-actions {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.btn-social-solid,
+.btn-social-outline {
+    flex: 1;
+    padding: 12px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 2px;
+}
+
+.btn-social-solid {
+    background-color: #1a3c34;
+    color: var(--color-white);
+    border: 1px solid #1a3c34;
+}
+
+.btn-social-outline {
+    background-color: transparent;
+    color: #1a3c34;
+    border: 1px solid #1a3c34;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-social-outline:hover {
+    background-color: var(--color-teal-dark);
+    color: var(--color-text-light);
+}
+
+/* Image Grid */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.social-item {
+    aspect-ratio: 1/1;
+    background-color: #d9d9d9;
+    overflow: hidden;
+}
