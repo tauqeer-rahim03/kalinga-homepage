@@ -300,14 +300,14 @@
     }
 
     .ethos-container {
-        flex-direction: row; /* Desktop: Image Left, Text Right */
-        gap: 80px; /* Large elegant gap */
+        flex-direction: row;
+        gap: 80px;
         align-items: center;
     }
 
     .ethos-image {
         width: 50%;
-        aspect-ratio: 1/1; /* Square elegant crop on desktop */
+        aspect-ratio: 1/1;
         margin-top: 0;
     }
 
@@ -323,6 +323,39 @@
 
     .ethos-desc {
         font-size: 16px;
-        max-width: 500px; /* Constrain reading width */
+        max-width: 500px;
+    }
+
+    .section-reviews {
+        padding: 80px 0;
+    }
+
+    .reviews-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        overflow: visible;
+        padding-bottom: 0;
+    }
+
+    .review-card {
+        min-width: auto;
+    }
+
+    .trust-badges {
+        gap: 100px;
+    }
+
+    .badge-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .badge-item {
+        width: auto;
+    }
+
+    .badge-item p {
+        font-size: 14px;
     }
 }
