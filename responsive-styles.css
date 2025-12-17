@@ -358,4 +358,20 @@
     .badge-item p {
         font-size: 14px;
     }
+
+    .footer-inner {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .copyright-pill {
+        padding: 14px 0;
+        font-size: 14px;
+    }
 }
