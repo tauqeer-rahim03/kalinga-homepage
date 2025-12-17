@@ -170,8 +170,8 @@ body {
     transition: background-color 0.3s;
 }
 
-.category-pill:hover{
-    background-color: rgba(0,0,0,0.1);
+.category-pill:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .cat-img {
@@ -234,10 +234,12 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
+    background-color: var(--color-teal-dark);
+    color: var(--color-text-light);
     transform: translateY(-2px);
     opacity: 0.9;
 }
@@ -252,7 +254,6 @@ body {
 .features-bar {
     background-color: var(--color-white);
     padding: var(--spacing-md) 0;
-    border-bottom: 1px solid #eee;
 }
 
 .features-inner {
@@ -272,7 +273,7 @@ body {
     gap: 8px;
 }
 
-.x{
+.x {
     display: none;
 }
 
@@ -280,4 +281,202 @@ body {
     width: 14px;
     height: 14px;
     color: #444;
+}
+
+/* ==================== BESTSELLERS SECTION ==================== */
+.section-bestsellers {
+    padding: 60px 0;
+    background-color: var(--color-white);
+}
+
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: var(--color-text-dark);
+    font-weight: 400;
+}
+
+.section-title em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Filters */
+.filters-wrapper {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 10px; /* Space for scrollbar if any */
+    margin-bottom: 30px;
+    scrollbar-width: none;
+}
+.filters-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-pill {
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-pill:hover {
+    border-color: var(--color-teal-dark);
+    color: var(--color-teal-dark);
+}
+
+.filter-pill.active {
+    background-color: var(--color-teal-dark);
+    color: var(--color-white);
+    border-color: var(--color-teal-dark);
+}
+
+/* Product Grid - Mobile Slider */
+.product-grid-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+}
+
+.product-card {
+    min-width: 75%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8x;
+    position: relative;
+}
+
+.img-placeholder-product {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card Details */
+.card-details {
+    text-align: left;
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.product-price {
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-family: var(--font-primary);
+}
+
+.current-price {
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-right: 8px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+}
+
+/* Color Swatches */
+.color-swatches {
+    display: flex;
+    gap: 8px;
+}
+
+.swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.swatch.gold {
+    background-color: #e6c87c;
+}
+.swatch.silver {
+    background-color: #c0c0c0;
+}
+
+.swatch.selected {
+    border: 1px solid #333;
+    box-shadow: 0 0 0 1px #fff inset; /* Create ring effect */
+}
+
+/* Section Footer Button */
+.section-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-dark {
+    background-color: var(--color-teal-dark);
+    color: var(--color-white);
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+.btn-dark:hover {
+    background-color: #112923;
+}
+.arrow-icon-white {
+    width: 16px;
+    height: 16px;
+    stroke: #fff;
+}
+
+/* ==================== RECENTLY VIEWED (Desktop Only) ==================== */
+.section-recent {
+    background-color: #f3e5d8; /* Beige Background */
+    padding: 60px 0;
+}
+
+.recent-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* Mobile-only tweak for Recent items if they reused card styles */
+.recent-card {
+    min-width: auto;
+    background: transparent;
+}
+.recent-card .card-image {
+    background-color: #fff; /* White bg for images on beige section */
 }

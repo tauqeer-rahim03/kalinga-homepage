@@ -127,4 +127,37 @@
     .feature-item {
         font-size: 16px;
     }
+
+    /* Grid Layout for Bestsellers */
+    .product-grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        overflow: visible;
+        padding-bottom: 0;
+    }
+
+    .product-card {
+        min-width: auto;
+        transition: box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Filters Alignment */
+    .filters-wrapper {
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .btn-dark {
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .btn-dark:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
 }
