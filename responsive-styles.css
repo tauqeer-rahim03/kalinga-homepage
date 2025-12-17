@@ -253,4 +253,45 @@
     .section-social-mobile {
         display: none;
     }
+
+    .section-future {
+        padding: 80px 0;
+    }
+
+    .future-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .future-image {
+        width: 45%;
+        height: auto;
+        aspect-ratio: 1/1;
+        margin-bottom: 0;
+    }
+
+    .future-content {
+        width: 55%;
+        padding-right: 40px;
+    }
+
+    .future-title {
+        font-size: 42px;
+        margin-bottom: 24px;
+    }
+
+    .future-desc {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .future-features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 30px;
+    }
+
+    .feature-item span {
+        font-size: 14px;
+    }
 }
