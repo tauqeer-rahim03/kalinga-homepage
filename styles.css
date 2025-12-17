@@ -357,12 +357,12 @@ body {
 .card-image {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background-color: #fafafa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 8x;
     position: relative;
+}
+
+.card-image img {
+    object-fit: cover;
 }
 
 .img-placeholder-product {
@@ -481,6 +481,7 @@ body {
     aspect-ratio: 1 / 1;
     margin-bottom: 12px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .collection-img svg {
@@ -510,11 +511,91 @@ body {
     display: block;
 }
 
-.bg-white {
-    background-color: #ffffff !important;
-}
-
 .recent-card {
     min-width: 70%;
     scroll-snap-align: start;
+}
+
+/* ==================== GIFTING SECTION ==================== */
+.section-gifting {
+    padding: 60px 0;
+    background-color: var(--color-white);
+}
+
+.gifting-title {
+    max-width: 800px;
+    margin: 0 auto 40px auto; /* Centered margin logic */
+    line-height: 1.3;
+}
+
+/* Mobile: Horizontal Slider Wrapper */
+.gifting-grid-wrapper {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+.gifting-grid-wrapper::-webkit-scrollbar {
+    display: none;
+} /* Hide scrollbar Chrome/Saf */
+
+/* Gifting Card Styling */
+.gifting-card {
+    min-width: 85%; /* Mobile: Show partial next card */
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gifting-card img {
+    object-fit: cover;
+}
+
+.gifting-img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Square images for grid items */
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gifting-img svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid var(--color-teal-dark);
+    color: var(--color-teal-dark);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    max-width: 250px;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-teal-dark);
+    color: var(--color-white);
+}
+
+.gifting-feature {
+    display: none;
+}
+.img-placeholder-gifting-large {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
