@@ -223,4 +223,29 @@
     .moment-img {
         aspect-ratio: 1/1;
     }
+
+    .section-promos {
+        padding: 40px 0 80px 0;
+    }
+
+    /* Reset Scroll Behavior for Desktop */
+    .promo-container {
+        flex-direction: row;
+        gap: 0px;
+        overflow-x: visible;
+        padding-bottom: 0;
+        scroll-snap-type: none;
+    }
+
+    .promo-card {
+        aspect-ratio: 16/9; /* Widescreen for Desktop */
+        width: 50%;
+        min-width: auto; /* Remove mobile min-width */
+        flex-shrink: 1;
+        scroll-snap-align: none;
+    }
+
+    .promo-title {
+        font-size: 36px;
+    }
 }
