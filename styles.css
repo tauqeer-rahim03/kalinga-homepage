@@ -450,9 +450,11 @@ body {
     gap: 10px;
     transition: background-color 0.3s;
 }
+
 .btn-dark:hover {
     background-color: #112923;
 }
+
 .arrow-icon-white {
     width: 16px;
     height: 16px;
@@ -524,26 +526,24 @@ body {
 
 .gifting-title {
     max-width: 800px;
-    margin: 0 auto 40px auto; /* Centered margin logic */
+    margin: 0 auto 40px auto;
     line-height: 1.3;
 }
 
-/* Mobile: Horizontal Slider Wrapper */
 .gifting-grid-wrapper {
     display: flex;
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding-bottom: 20px;
-    scrollbar-width: none; /* Hide scrollbar Firefox */
+    scrollbar-width: none;
 }
 .gifting-grid-wrapper::-webkit-scrollbar {
     display: none;
-} /* Hide scrollbar Chrome/Saf */
+}
 
-/* Gifting Card Styling */
 .gifting-card {
-    min-width: 85%; /* Mobile: Show partial next card */
+    min-width: 85%;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -556,7 +556,7 @@ body {
 
 .gifting-img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Square images for grid items */
+    aspect-ratio: 1 / 1;
     background-color: #f9f9f9;
     margin-bottom: 20px;
     overflow: hidden;
@@ -591,6 +591,7 @@ body {
 .gifting-feature {
     display: none;
 }
+
 .img-placeholder-gifting-large {
     width: 100%;
     height: 100%;
@@ -598,4 +599,115 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* ==================== MOMENTS SECTION ==================== */
+.section-moments {
+    padding: 60px 0;
+    background-color: var(--color-beige); /* Matches design beige */
+}
+
+.moments-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.section-desc {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Mobile Slider Logic */
+.moments-grid-wrapper {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+}
+.moments-grid-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.moment-card {
+    min-width: 85%; /* Shows next card peeking on mobile */
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.moment-card img {
+    object-fit: cover;
+}
+
+.moment-img {
+    width: 100%;
+    aspect-ratio: 4/3; /* Slightly landscape as per image */
+    background-color: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.moment-img svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.moment-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.moment-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.moment-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-moment {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-teal-dark);
+    color: var(--color-white);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-moment:hover {
+    background-color: #112923;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Bottom Action Button Styling */
+.moments-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wide {
+    padding: 14px 40px;
+    font-size: 15px;
 }
