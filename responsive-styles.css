@@ -160,4 +160,17 @@
         transform: translateY(-2px);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
+
+    .collection-grid {
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 24px;
+    }
+
+    .recent-slider-modifier {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        overflow: visible;
+        padding-bottom: 0;
+    }
 }

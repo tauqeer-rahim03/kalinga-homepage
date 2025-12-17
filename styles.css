@@ -354,7 +354,6 @@ body {
     flex-direction: column;
 }
 
-
 .card-image {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -460,23 +459,62 @@ body {
     stroke: #fff;
 }
 
-/* ==================== RECENTLY VIEWED (Desktop Only) ==================== */
-.section-recent {
-    background-color: #f3e5d8; /* Beige Background */
-    padding: 60px 0;
+/* ==================== COLLECTIONS SECTION ==================== */
+.section-collections {
+    padding: 40px 0;
+    background-color: var(--color-white);
 }
 
-.recent-grid {
+.collection-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
 }
 
-/* Mobile-only tweak for Recent items if they reused card styles */
-.recent-card {
-    min-width: auto;
-    background: transparent;
+.collection-item {
+    text-align: center;
+    cursor: pointer;
 }
-.recent-card .card-image {
-    background-color: #fff; /* White bg for images on beige section */
+
+.collection-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.collection-img svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.3s;
+}
+
+.collection-item:hover .collection-name {
+    text-decoration-color: var(--color-text-dark);
+}
+
+/* ==================== RECENTLY VIEWED ==================== */
+.section-recent {
+    background-color: var(--color-beige);
+    padding: 60px 0;
+    display: block;
+}
+
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+.recent-card {
+    min-width: 70%;
+    scroll-snap-align: start;
 }
