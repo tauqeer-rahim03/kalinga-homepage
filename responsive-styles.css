@@ -294,4 +294,35 @@
     .feature-item span {
         font-size: 14px;
     }
+
+    .section-ethos {
+        padding: 80px 0;
+    }
+
+    .ethos-container {
+        flex-direction: row; /* Desktop: Image Left, Text Right */
+        gap: 80px; /* Large elegant gap */
+        align-items: center;
+    }
+
+    .ethos-image {
+        width: 50%;
+        aspect-ratio: 1/1; /* Square elegant crop on desktop */
+        margin-top: 0;
+    }
+
+    .ethos-content {
+        width: 50%;
+        padding-right: 40px;
+    }
+
+    .ethos-title {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .ethos-desc {
+        font-size: 16px;
+        max-width: 500px; /* Constrain reading width */
+    }
 }

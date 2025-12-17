@@ -971,3 +971,64 @@ body {
     color: var(--color-text-dark);
     line-height: 1.4;
 }
+
+/* ==================== ETHOS SECTION ==================== */
+.section-ethos {
+    background-color: var(--color-white);
+    padding: 0 0 60px 0;
+}
+
+.ethos-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    align-items: center;
+}
+
+.ethos-image {
+    width: 100%;
+    aspect-ratio: 4/3; 
+    overflow: hidden;
+    margin-top: 20px; 
+}
+
+/* Content styling */
+.ethos-content {
+    width: 100%;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.ethos-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.ethos-title {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    color: var(--color-text-dark);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.ethos-title em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.ethos-desc {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.ethos-desc p {
+    margin-bottom: 16px;
+}
