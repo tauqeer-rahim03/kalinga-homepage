@@ -8,7 +8,7 @@ Built entirely with **HTML, CSS, and Vanilla JavaScript** — no frameworks or e
 
 ## 🚀 Live Demo
 
-[**View Live Demo**](#)
+[**View Live Demo**](https://kalinga-homepage.vercel.app/)
 
 ---
 
@@ -57,7 +57,6 @@ Built entirely with **HTML, CSS, and Vanilla JavaScript** — no frameworks or e
 -   Clone the repository:
 
 ```text
-
 git clone [https://github.com/tauqeer-rahim03/kalinga-homepage](https://github.com/tauqeer-rahim03/kalinga-homepage)
 ```
 
